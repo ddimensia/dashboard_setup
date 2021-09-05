@@ -1,0 +1,15 @@
+
+export PATH=$PATH:$HOME/.local/bin
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_VIRTUALENV=$HOME/.local/bin/virtualenv
+source $HOME/.local/bin/virtualenvwrapper.sh
+
+echo "Starting RaceCapture, Ctrl-c to abort!"
+for i in $(seq 5 -1 1)
+do
+echo -n $i
+sleep 1
+echo -ne '\b'
+done
+workon rc_app && python main.py
