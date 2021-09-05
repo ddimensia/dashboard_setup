@@ -5,4 +5,4 @@ echo -n $i
 sleep 1
 echo -ne '\b'
 done
-racecapture/run_racecapture.sh
+~racecapture/run_racecapture.sh
